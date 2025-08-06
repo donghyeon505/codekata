@@ -2,13 +2,7 @@ class Solution {
     public String solution(int n) {
         String answer = "";
         
-        for (int i = 1; i <= n; i++) {
-            if (i % 2 == 1) {
-                answer += "수";
-            } else {
-                answer += "박";
-            }
-        }
+        answer = "수박".repeat((n + 1) / 2).substring(0, n);
         
         return answer;
     }
