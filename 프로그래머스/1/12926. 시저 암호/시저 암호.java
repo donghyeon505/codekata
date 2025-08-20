@@ -11,14 +11,15 @@ class Solution {
             
             if (c == ' ') {
                 sb.append(c);
-            } else if (Character.isUpperCase(c)) {
-                i = ((i - 'A' + n) % 26) + 'A';
+                
+            } else if (i >= 65 && i <= 90) {
+                i = ((i - 65 + n)) % 26 + 65;
+                
                 sb.append((char)i);
-            } else if (Character.isLowerCase(c)) {
-                i = ((i - 'a' + n) % 26) + 'a';
+            } else if (i >= 97 && i <= 122) {
+                i = ((i - 97 + n)) % 26 + 97;
+                
                 sb.append((char)i);
-            } else {
-                sb.append(c);
             }
         }
         
