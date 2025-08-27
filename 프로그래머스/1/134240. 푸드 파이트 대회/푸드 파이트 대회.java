@@ -1,7 +1,5 @@
 class Solution {
     public String solution(int[] food) {
-        String answer = "";
-        
         StringBuilder sb = new StringBuilder();
             
         for (int a = 1; a < food.length; a++) {
@@ -14,8 +12,6 @@ class Solution {
             }
         }
         
-        answer = sb.toString() + "0" + sb.reverse();
-        
-        return answer;
+        return sb.toString() + "0" + sb.reverse();
     }
 }
