@@ -8,8 +8,7 @@ class Solution {
         int length = score.length;
         
         for (int i = length; i >= m; i -= m) {
-            int minScore = score[i - m];
-            answer += minScore * m;
+            answer += score[i - m] * m;
         }
         
         return answer;
